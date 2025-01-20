@@ -8,6 +8,8 @@ import Random from './components/Random/Random';
 import Rating from './components/Rating';
 import IdCardList from './components/user-card/IdCardList';
 import ClickablePicture from './components/ClickablePicture';
+import DicePicture from './components/DicePicture';
+import Carousel from './components/Carousel';
 
 
 
@@ -90,11 +92,22 @@ function App() {
 <LikeButton/>
 
 <ClickablePicture/>
+<DicePicture/>
+
 
 
 
       </section>
-      
+      <section>
+      <Carousel
+  images={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+      </section>
     </div>
   );
 }
